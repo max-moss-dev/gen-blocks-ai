@@ -1,0 +1,38 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.11.0_webpack@5.97.1_webpack-cli@5.1.4_/node_modules/css-loader/dist/cjs.js!./node_modules/.pnpm/sass-loader@13.3.3_sass@1.83.0_webpack@5.97.1_webpack-cli@5.1.4_/node_modules/sass-loader/dist/cjs.js!./src/editor.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.block-editor-rich-text__container {
+  position: relative;
+  display: inline-block;
+}
+.block-editor-rich-text__link-button {
+  background-color: #fafafa;
+  border-radius: 4px;
+  width: 24px;
+  min-width: 24px !important;
+  height: 24px;
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+  transition: all 0.2s ease;
+}
+.wp-block.is-selected .block-editor-rich-text__link-button {
+  display: flex;
+}
+.block-editor-rich-text__link-button .dashicon {
+  font-size: 14px;
+}
+.block-editor-rich-text__link-button:hover {
+  background-color: #007cba;
+}
+.block-editor-rich-text__link-button:hover .dashicon {
+  color: #fff;
+}
+
+.wp-block.is-selected a.block-editor-rich-text__editable {
+  padding-right: 40px !important;
+}
+
+/*# sourceMappingURL=editor.css.map*/
