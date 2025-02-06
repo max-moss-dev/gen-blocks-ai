@@ -1,0 +1,41 @@
+.block-editor-rich-text {
+    &__container {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__link-button {
+        background-color: #fafafa;
+        border-radius: 4px;
+        width: 24px;
+        min-width: 24px !important;
+        height: 24px;
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // transform: translate(-50%, -50%);
+        display: none;
+        transition: all 0.2s ease;
+
+        .wp-block.is-selected & {
+            display: flex;
+        }
+    
+        .dashicon {
+            font-size: 14px;
+        }
+
+        &:hover {
+            background-color: #007cba;
+
+            .dashicon {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.wp-block.is-selected a.block-editor-rich-text__editable {
+    padding-right: 40px !important;
+}
